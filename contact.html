@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Hospital</title>
+
+<style>
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+</head>
+<body>
+
+  <!-- top navigation bar -->
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+<!-- <div style="height: 100vh; background-image: url('photo/pic5.jpg');" >
+
+
+
+</div> -->
+
+<br><br>
+
+<!-- headline div -->
+<div style="text-align: center;">
+
+  <button type="button" style="background-color: cadetblue; color: black; width: 300px; height: 70px; border: 3px solid black; border-radius: 20px; font-size: 20px;">GET IN TOUCH WITH US</button>
+
+  <br><br><br>
+
+</div>
+
+
+<!-- cards section -->
+
+<div class="row" style="height: 80vh; padding-top: 40px; text-align: center; background-color: rgb(255, 255, 255);">
+
+  <!-- address column -->
+
+  <div class="column">
+      <div class="card">
+          <img src="photo/map-pin.png" alt="Avatar" style="width:10%">
+          <div class="container" style="background-color: white;">
+            <h4><b>Address</b></h4>
+            <p>Juffair,</p>
+            <p>Manama</p>
+            <p>Bahrain</p>
+          </div>
+        </div>
+  </div>
+<br><br><br><br>'<br><br><br>'
+  <!-- email column -->
+  <div class="column">
+      <div class="card">
+          <img src="photo/mail.png" alt="Avatar" style="width:10%">
+          <div class="container" style="background-color: white;">
+            <h4><b>Email</b></h4>
+            <p>Hospital@Hospital</p>
+
+          </div>
+        </div>
+  </div>
+
+<br><br><br><br>'<br><br><br>'
+  <!-- contact number column -->
+  <div class="column">
+      <div class="card">
+          <img src="photo/call.png" alt="Avatar" style="width:10%">
+          <div class="container" style="background-color: white;">
+            <h4><b>Phone</b></h4>
+            <p>+973123456789</p>
+
+          </div>
+        </div>
+  </div>
+
+</div>
+
+
+<br><br><br><br><br><br>'<br><br><br>'<br><br><br><br>'<br><br><br>'<br><br><br><br><br><br>'<br><br><br>'<br><br><br><br>'<br><br><br>'
+
+<!-- contact form -->
+
+<div class="container" style="width: 60%; margin:auto ; background-color: white;">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="bahrain">BH</option>
+      <option value="ksa">KSA</option>
+      <option value="uae">UAE</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+<!-- footer section -->
+
+<div class="row" style="height: 50vh; padding-top: 20px; text-align: center; background-color: rgb(85, 85, 85);">
+
+  <!-- links column -->
+  <div class="column">
+    <div class="card">
+
+        <div class="container" style="background-color: rgb(85, 85, 85); color: white;">
+          <h4><b>Useful Links</b></h4>
+          <a href="index.html" style="color: white;"><p>Home</p></a>
+          <a href="services.html" style="color: white;"><p>Services</p></a>
+          <a href="doctors.html" style="color: white;"><p>Doctors</p></a>
+          <a href="contact.html" style="color: white;"><p>Contact Us</p></a>
+        </div>
+      </div>
+</div>
+
+
+<!-- services column -->
+    <div class="column">
+        <div class="card">
+
+            <div class="container" style="background-color: rgb(85, 85, 85);">
+              <h4 style="color: white;"><b>Our Services</b></h4>
+              <p style="color: white;">Emergency Admission</p>
+              <p style="color: white;">I.C.U</p>
+              <p style="color: white;">Large Number Of Beds</p>
+
+            </div>
+          </div>
+    </div>
+
+
+    <!-- address column -->
+    <div class="column">
+        <div class="card">
+
+            <div class="container" style="background-color: rgb(85, 85, 85);">
+              <h4 style="color: white;"><b>Contact Us</b></h4>
+              <p style="color: white;">Juffair</p>
+              <p style="color: white;">Manama</p>
+              <p style="color: white;">Bahrain</p>
+
+              <p style="color: white;">Phone:+973123456789</p>
+              <p style="color: white;">Email: Hospital@Hospital.com</p>
+
+            </div>
+          </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
